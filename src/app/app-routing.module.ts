@@ -31,12 +31,12 @@ const routes: Routes = [
     loadChildren: ()=>
     import('./mod3/mod3.module').then((options) => options.Mod3Module)
   },
-  {
-    path:'mod3/:param1',
-    component: Mod3Component,
-    loadChildren: ()=>
-    import('./mod3/mod3.module').then((options) => options.Mod3Module)
-  },
+  // {
+  //   path:'mod3/:param1',
+  //   component: Mod3Component,
+  //   loadChildren: ()=>
+  //   import('./mod3/mod3.module').then((options) => options.Mod3Module)
+  // },
   {
     path:'404',
     component: Page404Component

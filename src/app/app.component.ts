@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
   }
 
 
-  goMyProject() {
-    this.router.navigate(['mod3'])
-  }
+  // goMyProject() {
+  //   this.router.navigate(['mod3'])
+  // }
 }
