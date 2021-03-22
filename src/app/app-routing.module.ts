@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { Mod1Component } from './mod1/mod1.component';
 import { Mod2Component } from './mod2/mod2.component';
 import { Mod3Component } from './mod3/mod3.component';
+import { Mod4Component } from './mod4/mod4.component';
 import { Page404Component } from './page404/page404.component';
 
 const routes: Routes = [
@@ -31,12 +32,12 @@ const routes: Routes = [
     loadChildren: ()=>
     import('./mod3/mod3.module').then((options) => options.Mod3Module)
   },
-  // {
-  //   path:'mod3/:param1',
-  //   component: Mod3Component,
-  //   loadChildren: ()=>
-  //   import('./mod3/mod3.module').then((options) => options.Mod3Module)
-  // },
+  {
+    path:'mod4',
+    component: Mod4Component,
+    loadChildren: ()=>
+    import('./mod4/mod4.module').then((options) => options.Mod4Module)
+  },
   {
     path:'404',
     component: Page404Component

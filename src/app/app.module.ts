@@ -8,6 +8,9 @@ import { Mod2Module } from './mod2/mod2.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { Mod3Module } from './mod3/mod3.module';
+import { Mod4Module } from './mod4/mod4.module';
+import { HttpClientModule }   from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,7 +25,10 @@ import { Mod3Module } from './mod3/mod3.module';
     Mod2Module,
     BrowserAnimationsModule,
     MatButtonModule,
-    Mod3Module
+    Mod3Module,
+    Mod4Module,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,6 +3,7 @@ import { filter, switchMap } from 'rxjs/operators';
 import {ActivatedRoute, Router} from '@angular/router';
 import { Location } from "@angular/common";
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,6 +15,7 @@ export class AppComponent implements OnInit {
 
   constructor(private router: Router, private activeRouter: ActivatedRoute, private location: Location) { }
   ngOnInit(): void {
+
     this.activeRouter.paramMap.pipe(switchMap((params)=> params.getAll('param1')))
     .subscribe((data)=>{
       this.param1 = + data
