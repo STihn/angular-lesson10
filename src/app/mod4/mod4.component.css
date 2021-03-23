@@ -1,4 +1,4 @@
-table {
+.mat-table {
   width: 100%;
 }
 
@@ -44,4 +44,14 @@ tr.example-detail-row {
 
 .example-element-description-attribution {
   opacity: 0.5;
+}
+
+.mat-cell {
+  width: 100px;
+  padding-right: 15px;
+}
+
+.user_img {
+  border-radius: 50%;
+  margin-right: 30px;
 }

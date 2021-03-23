@@ -10,7 +10,7 @@ export class AppServiceService {
   options = {
     headers: new HttpHeaders().append(
       'Authorization',
-      'Basic ' + btoa('STihn:483192b12b744df4f08d27c3c1db6eaf340f2458')
+      'Basic ' + btoa('STihn:763c74097b0e87f7b7d76eb68295b2011cea46a7')
     ),
   };
 

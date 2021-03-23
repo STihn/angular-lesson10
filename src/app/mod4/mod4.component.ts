@@ -33,12 +33,12 @@ export class Mod4Component implements OnInit {
   dataSource: MatTableDataSource<any>;
 
   displayedColumns = [
+    'number',
     'state',
     'created',
     'title',
     'url',
     'link',
-    'number'
   ];
 
   constructor(
@@ -65,8 +65,8 @@ export class Mod4Component implements OnInit {
             state: this.formBilder.control(issue.state),
             created: this.formBilder.control(issue.created_at),
             title: this.formBilder.control(issue.title),
-            url: this.formBilder.control(issue.url),
-            link: this.formBilder.control(issue.user.url),
+            url: this.formBilder.control(issue.html_url),
+            link: this.formBilder.control(issue.user.html_url),
             body: this.formBilder.control(issue.body)
           })
         )
@@ -98,7 +98,6 @@ export class Mod4Component implements OnInit {
 })
 export class ReplayIssueDialog {
   body: string;
-  // service: any;
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public num: number,
